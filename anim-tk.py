@@ -4,8 +4,8 @@ from matplotlib.animation import FuncAnimation
 import yfinance as yf
 
 # Function to fetch stock price data
-def fetch_stock_data(symbol):
-    data = yf.download(symbol, period='1y')['Close']
+def fetch_stock_data(symbol): 
+    data = yf.download(symbol, period='1y')['Close'] 
     return data
 
 # Function to create and display a bar chart animation
@@ -73,6 +73,8 @@ var = tk.IntVar()
 bar_button = tk.Radiobutton(root, text="Bar Chart", variable=var, value=1)
 bar_button.pack()
 
+
+# Add radio buttons for visualization options
 line_button = tk.Radiobutton(root, text="Line Plot", variable=var, value=2)
 line_button.pack()
 
